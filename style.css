@@ -1,0 +1,193 @@
+
+/* Reset basic spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body - mobile first */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  text-align: center;
+  padding: 10px;
+  color: #333;
+}
+
+/* Container */
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Headings */
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Card layout */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Text */
+p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+/* Navigation buttons */
+a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  width: 90%;
+  max-width: 300px;
+  font-size: 16px;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* Form inputs */
+select,
+input {
+  padding: 8px;
+  margin-top: 5px;
+  width: 90%;
+  max-width: 250px;
+  font-size: 16px;
+}
+
+/* Button */
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 90%;
+  max-width: 250px;
+}
+
+button:hover {
+  background-color: #1e7e34;
+  cursor: pointer;
+}
+
+/* Status colors */
+.available {
+  color: green;
+  font-weight: bold;
+}
+
+.not-available {
+  color: red;
+  font-weight: bold;
+}
+
+/* Last updated text */
+#lastUpdated {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Desktop improvements */
+@media (min-width: 768px) {
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  a {
+    width: auto;
+    padding: 10px 20px;
+  }
+
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* body {
+  font-family: Arial;
+  background-color: #f4f6f8;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+p {
+  font-size: 18px;
+}
+
+.available {
+  color: green;
+  font-weight: bold;
+}
+
+.not-available {
+  color: red;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+a:hover {
+  background-color: #0056b3;
+} */

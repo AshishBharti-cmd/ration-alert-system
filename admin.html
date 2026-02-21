@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Depot Holder Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div style="margin-bottom:20px;">
+
+  <a href="index.html">Home</a> |
+  <a href="admin.html">Admin</a> |
+  <a href="about.html">About Me</a>
+
+</div>
+
+
+<div id="dashboard" style="display:none;">
+
+  <div class="container">
+    <h1>Depot Holder Dashboard</h1>
+
+    <div class="card">
+      <label>🌾 Wheat:</label>
+      <select id="wheat">
+        <option value="Available">Available</option>
+        <option value="Not Available">Not Available</option>
+      </select>
+
+      <br><br>
+
+      <label>🍬 Sugar:</label>
+      <select id="sugar">
+        <option value="Available">Available</option>
+        <option value="Not Available">Not Available</option>
+      </select>
+
+      <br><br>
+
+      <label>🛢 Oil:</label>
+      <select id="oil">
+        <option value="Available">Available</option>
+        <option value="Not Available">Not Available</option>
+      </select>
+
+      <br><br>
+
+      <label>Message:</label>
+      <input type="text" id="message" placeholder="Enter reason or update">
+
+      <br><br>
+
+      <button onclick="updateStatus()">Update Status</button>
+    </div>
+  </div>
+</div>
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
