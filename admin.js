@@ -1,17 +1,19 @@
-const enteredPassword = prompt("Enter admin password:");
+window.checkPassword = function () {
 
-if (enteredPassword === "1234") {
+  const password = document.getElementById("passwordInput").value;
 
-  document.getElementById("dashboard").style.display = "block";
+  if (password === "1234") {
 
-} else {
+    document.getElementById("loginBox").style.display = "none";
+    document.getElementById("dashboard").style.display = "block";
 
-  alert("Wrong password");
-  document.body.innerHTML = "<h2>Access Denied</h2>";
+  } else {
 
-  throw new Error("Unauthorized");
+    document.getElementById("errorMsg").innerText = "Wrong password";
 
-}
+  }
+
+};
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
@@ -49,4 +51,5 @@ window.updateStatus = async function () {
   });
 
   alert("Status Updated Successfully!");
+
 };
