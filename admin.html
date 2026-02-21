@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Depot Holder Dashboard</title>
+  <title>Admin Dashboard</title>
   <link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<div style="margin-bottom:20px;">
+<div class="container">
 
-  <a href="index.html">Home</a> |
-  <a href="admin.html">Admin</a> |
-  <a href="about.html">About Me</a>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="admin.html">Admin</a>
+    <a href="about.html">About</a>
+  </div>
 
-</div>
+
+  <!-- LOGIN BOX -->
+  <div id="loginBox" class="card">
+
+    <h2>Admin Login</h2>
+
+    <p style="color:gray; font-size:14px;">
+      Demo Password: <strong>1234</strong>
+    </p>
+
+    <input type="password" id="passwordInput" placeholder="Enter password">
+
+    <br><br>
+
+    <button onclick="checkPassword()">Login</button>
+
+    <p id="errorMsg" style="color:red;"></p>
+
+  </div>
 
 
-<div id="dashboard" style="display:none;">
+  <!-- DASHBOARD -->
+  <div id="dashboard" style="display:none;">
 
-  <div class="container">
     <h1>Depot Holder Dashboard</h1>
 
     <div class="card">
-      <label>🌾 Wheat:</label>
+
+      <label> Wheat:</label>
       <select id="wheat">
         <option value="Available">Available</option>
         <option value="Not Available">Not Available</option>
@@ -30,7 +52,7 @@
 
       <br><br>
 
-      <label>🍬 Sugar:</label>
+      <label>Sugar:</label>
       <select id="sugar">
         <option value="Available">Available</option>
         <option value="Not Available">Not Available</option>
@@ -38,7 +60,7 @@
 
       <br><br>
 
-      <label>🛢 Oil:</label>
+      <label> Oil:</label>
       <select id="oil">
         <option value="Available">Available</option>
         <option value="Not Available">Not Available</option>
@@ -47,14 +69,18 @@
       <br><br>
 
       <label>Message:</label>
-      <input type="text" id="message" placeholder="Enter reason or update">
+      <input type="text" id="message">
 
       <br><br>
 
       <button onclick="updateStatus()">Update Status</button>
+
     </div>
+
   </div>
+
 </div>
+
 <script type="module" src="admin.js"></script>
 
 </body>
